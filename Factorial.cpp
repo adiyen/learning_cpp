@@ -4,8 +4,6 @@
 
 using namespace std;
 
-int n = 20;
-
 long fact(long n) {
     if (n == 0) {
         return 1;
@@ -15,5 +13,7 @@ long fact(long n) {
 }
 
 int main() {
+    int n = 0;
+    cin >> n;
     cout << fact(n) << endl;
 }
