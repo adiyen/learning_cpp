@@ -155,18 +155,34 @@
 //     cout << numb[2] << endl;
 // }
 
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int humidity;
+//     int n;
+//     int numb[] = {};
+//     int temp;
+//     cin >> n;
+
+//     for(int j = 0; j < n*2; j+=2){
+//         cin >> numb[j] >> numb[j+1];
+//     } 
+//     //cout << numb[0] << numb[1] << numb[6] << numb[7] << endl;
+// }    
+
 #include <iostream>
-using namespace std;
+using namespace std; 
 
 int main() {
     int humidity;
-    int n;
-    int numb[] = {};
     int temp;
-    cin >> n;
+    cin >> temp >> humidity;
 
-    for(int j = 0; j < n*2; j+=2){
-        cin >> numb[j] >> numb[j+1];
-    } 
-    //cout << numb[0] << numb[1] << numb[6] << numb[7] << endl;
-}    
+    if (humidity >= 40 && humidity < 60 and temp < 60) {
+        cout << "Lucy plays tennis" << endl;
+    }
+    else if (humidity >= 40 && humidity < 60 and temp >= 60) {
+        cout << "Lucy plays golf" << endl;
+    }
+}
