@@ -175,14 +175,20 @@
 using namespace std; 
 
 int main() {
+    int n;
+    cin >> n;
     int humidity;
     int temp;
-    cin >> temp >> humidity;
-
-    if (humidity >= 40 && humidity < 60 and temp < 60) {
-        cout << "Lucy plays tennis" << endl;
-    }
-    else if (humidity >= 40 && humidity < 60 and temp >= 60) {
-        cout << "Lucy plays golf" << endl;
+    int count = 1;
+    
+    for(int i = 0; i < n; i++){
+        cin >> temp >> humidity;
+        if (humidity >= 40 && humidity < 60 and temp < 60) {
+            cout << "Day " << count << ": Lucy plays tennis" << endl;
+        }
+        else if (humidity >= 40 && humidity < 60 and temp >= 60) {
+            cout << "Day " << count <<  ": Lucy plays golf" << endl;
+        }
+        count++;
     }
 }
