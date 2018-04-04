@@ -5,8 +5,7 @@ using namespace std;
 
 void binary(string my_numb) {
     for(int i = my_numb.length(); i > 0; i--) {
-        int temp = my_numb.length() - i;
-        temp = pow(2, 3);
+        my_numb[i] = 
     }
     for(int j = 0; j < my_numb.length(); j++) {
         cout << my_numb[j] << endl;

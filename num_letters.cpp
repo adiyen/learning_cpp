@@ -3,7 +3,7 @@
 using namespace std;
 
 int NumLetters(string word) {
-
+    
 }
 
 int main() {
